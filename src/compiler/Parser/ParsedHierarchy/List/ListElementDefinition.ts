@@ -8,7 +8,7 @@ import { Identifier } from "../Identifier";
 export class ListElementDefinition extends ParsedObject {
   public seriesValue: number = 0;
 
-  public parent: ListDefinition | null = null;
+  //public parent: ListDefinition | null = null;
 
   get fullName(): string {
     const parentList = this.parent;
@@ -33,7 +33,7 @@ export class ListElementDefinition extends ParsedObject {
     public readonly explicitValue: number | null = null
   ) {
     super();
-    this.parent = super.parent as ListDefinition;
+    //this.parent = super.parent as ListDefinition;
   }
 
   public readonly GenerateRuntimeObject = (): RuntimeObject => {

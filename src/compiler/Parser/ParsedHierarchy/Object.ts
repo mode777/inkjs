@@ -15,7 +15,7 @@ export abstract class ParsedObject {
   private _runtimeObject: RuntimeObject | null = null;
 
   public content: ParsedObject[] = [];
-  public parent: ParsedObject | null = null;
+  public parent: any = null;
 
   get debugMetadata() {
     if (this._debugMetadata === null && this.parent) {

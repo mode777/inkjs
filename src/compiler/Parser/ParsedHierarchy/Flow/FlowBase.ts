@@ -516,6 +516,7 @@ export abstract class FlowBase extends ParsedObject implements INamedContent {
     this.Warning(message, terminatingObject);
   };
 
-  public readonly toString = (): string =>
+  public toString(){
     `${this.typeName} '${this.identifier}'`;
+  }
 }

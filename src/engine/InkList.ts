@@ -116,7 +116,7 @@ export class InkList extends Map<SerializedInkListItem, number> {
     // Trying to be smart here, this emulates the constructor inheritance found
     // in the original code, but only if otherList is an InkList. IIFE FTW.
     super(
-      (() => {
+      (function() {
         if (arguments[0] instanceof InkList) {
           return arguments[0];
         } else {
